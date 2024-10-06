@@ -1,0 +1,23 @@
+{
+  "name": "authjs",
+  "type": "module",
+  "scripts": {
+    "start": "platformatic start",
+    "test": "borp",
+    "clean": "rm -fr ./dist",
+    "build": "platformatic compile"
+  },
+  "devDependencies": {
+    "fastify": "^5.0.0",
+    "borp": "^0.17.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@platformatic/service": "^2.2.0",
+    "@fastify/formbody": "^8.0.1",
+    "@auth/core": "^0.35.3"
+  },
+  "engines": {
+    "node": "^18.8.0 || >=20.6.0"
+  }
+}

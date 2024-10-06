@@ -1,0 +1,19 @@
+{
+  "name": "wattapp",
+  "private": true,
+  "scripts": {
+    "dev": "dotenv wattpm dev",
+    "build": "wattpm build",
+    "start": "wattpm start",
+    "debug": "wattpm start --inspect"
+  },
+  "dependencies": {
+    "@platformatic/composer": "^2.2.0",
+    "@platformatic/next": "^2.2.0",
+    "dotenv-cli": "^7.4.2",
+    "wattpm": "^2.2.0"
+  },
+  "workspaces": [
+    "web/*"
+  ]
+}
