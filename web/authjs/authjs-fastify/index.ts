@@ -24,12 +24,10 @@ export function FastifyAuth(
       method: ["GET", "POST"],
       url: "/*",
       handler: async (request, reply) => {
-        console.log("0. handle request", request.routeOptions);
         config.basePath = config.basePath || getBasePath(request);
         // @ts-ignore
         let response: Response = {};
         try {
-          console.log("1.==>");
           response = await Auth(toWebRequest(request), config);
         } catch (err) {
           console.log("ddd==>>", err);

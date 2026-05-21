@@ -59,7 +59,7 @@ export function toWebRequest(req: FastifyRequest) {
     (req.port !== 80 ? ":" + req.port : "") +
     "/authx" +
     req.originalUrl;
-  req.log.info("xx==>>", url);
+
   // const url = req.protocol + "://" + req.hostname + req.originalUrl;
 
   const headers = new Headers();

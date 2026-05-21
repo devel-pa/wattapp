@@ -13,7 +13,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@platformatic/service": "^2.2.0",
+    "@platformatic/service": "^2.5.0",
     "@fastify/formbody": "^8.0.1",
     "@auth/core": "^0.35.3"
   },
